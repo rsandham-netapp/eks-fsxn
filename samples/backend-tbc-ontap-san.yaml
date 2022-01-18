@@ -14,7 +14,7 @@ metadata:
 spec:
   version: 1
   storageDriverName: ontap-san
-  managementLIF: 198.19.255.172
-  svm: ekssvm
+  managementLIF: 198.19.255.249
+  svm: ekssvm01
   credentials: 
     name: backend-fsxn-ontap-san-secret

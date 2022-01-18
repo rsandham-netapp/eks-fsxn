@@ -2,7 +2,10 @@
 
 This repo comes as an appendix to the this (link here) blog post. It will help you build the demo enviroment and run the code samples that are mendioned throughout the blog. 
 
-## Requirements
+## Prerequisites
+- Install [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) on your workstation/server
+- Install [aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) on your workstation/server
+- Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) on your workstation/server
 
 ## Content
 - [terraform](/terraform) - terraform code to start a demo environment in AWS with 
