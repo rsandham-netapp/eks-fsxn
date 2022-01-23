@@ -1,5 +1,5 @@
 resource "aws_fsx_ontap_file_system" "eksfs" {
-  storage_capacity    = 2048
+  storage_capacity    = var.fsx_capacity
   subnet_ids          = module.vpc.private_subnets
   deployment_type     = "MULTI_AZ_1"
   throughput_capacity = 512
@@ -8,7 +8,7 @@ resource "aws_fsx_ontap_file_system" "eksfs" {
   fsx_admin_password = var.fsx_admin_password
   route_table_ids = module.vpc.private_route_table_ids
   tags = {
-      Name = var.fsxname
+      Name = var.fsx_name
   }
 }
 

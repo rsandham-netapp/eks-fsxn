@@ -10,8 +10,9 @@
 - `aws_region` AWS region to deploy the demo (default: `us-east-2`)
 - `kubernetes_version`  EKS version to provision (default: `1.21`)
 - `vpc_cidr` the VPC CIDR range (default: `10.0.0.0/16`)
-- `fsxname` the FSxN filesystem name (default: `eksfs`)
+- `fsx_name` the FSxN filesystem name (default: `eksfs`)
 - `fsx_admin_password` the FSxN admin password (default: `Netapp1!`)
+- `fsx_capacity` the FSxN storage capacity (default: `2048`)
 
 ## Run
 Run the following to start your eks environment:
