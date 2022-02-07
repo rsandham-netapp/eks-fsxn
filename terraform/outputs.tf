@@ -19,7 +19,7 @@ output "region" {
 }
 
 output "fsx_id" {
-  desdescription = "FSxN filsystem ID"
+  description = "FSxN filsystem ID"
   value = aws_fsx_ontap_file_system.eksfs.id
 }
 

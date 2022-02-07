@@ -4,7 +4,7 @@ variable "kubernetes_version" {
 }
 
 variable "vpc_cidr" {
-  default = "10.0.0.0/16"
+  default = "10.49.0.0/16"
   description = "default CIDR range of the VPC"
 }
 variable "aws_region" {
@@ -12,9 +12,14 @@ variable "aws_region" {
   description = "aws region"
 }
 
-variable "fsxname" {
+variable "fsx_name" {
   default = "eksfs"
   description = "default FSxN name"
+}
+
+variable "fsx_capacity" {
+  default = "2048"
+  description = "default FSxN storage capacity"
 }
 
 variable "fsx_admin_password" {
